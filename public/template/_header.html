@@ -1,0 +1,37 @@
+<md-toolbar md-scroll-shrink ng-controller="sideController" class="">
+	<div class="md-toolbar-tools md-menu-toolbar md-primary">
+		<md-button aria-label="photo" ng-click="toggleLeft()" class="md-icon-button">
+        	<md-icon md-svg-src="assets/img/icons/ic_dehaze_white_24px.svg"></md-icon>
+        </md-button>
+		<h2 md-truncate>YORI | Administrator</h2>
+		<md-menu>
+		<!-- openMenu($mdOpenMenu, $event) -->
+			<md-button aria-label="photo" ng-click="$mdOpenMenu()" class="md-icon-button">
+	          <md-icon md-svg-src="assets/img/icons/ic_more_vert_white_24px.svg"></md-icon>
+	        </md-button>
+	        <md-menu-content width="4" class="md-3-line" layout="column">
+		        <md-menu-item layout-align="center center">
+		        	<img ng-src="assets/img/default-user.png" class="md-avatar" style="width:70px;">
+		        </md-menu-item>
+				<md-menu-item>
+		          <md-button ng-click="ctrl.redial($event)">
+		          	<md-icon md-svg-src="assets/img/icons/ic_account_circle_black_24px.svg"></md-icon>
+		            My Profile
+		          </md-button>
+		        </md-menu-item>
+		        <md-menu-item>
+		          <md-button ng-click="ctrl.redial($event)">
+		          	<md-icon md-svg-src="assets/img/icons/ic_build_black_24px.svg"></md-icon>
+		            Setting
+		          </md-button>
+		        </md-menu-item>
+		        <md-menu-item>
+		          <md-button ng-click="ctrl.redial($event)">
+		          	<md-icon md-svg-src="assets/img/icons/ic_power_settings_new_black_24px.svg"></md-icon>
+		            Logout
+		          </md-button>
+		        </md-menu-item>
+			</md-menu-content>
+		</md-menu>
+	</div>
+</md-toolbar>

@@ -1,0 +1,41 @@
+[debug] [2018-03-19T13:27:58.821Z] ----------------------------------------------------------------------
+[debug] [2018-03-19T13:27:58.829Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-03-19T13:27:58.830Z] CLI Version:   3.17.6
+[debug] [2018-03-19T13:27:58.831Z] Platform:      linux
+[debug] [2018-03-19T13:27:58.831Z] Node Version:  v6.13.1
+[debug] [2018-03-19T13:27:58.831Z] Time:          Mon Mar 19 2018 20:27:58 GMT+0700 (WIB)
+[debug] [2018-03-19T13:27:58.831Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-19T13:27:58.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-19T13:27:58.870Z] > authorizing via signed-in user
+[debug] [2018-03-19T13:27:58.875Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-19T13:27:58.877Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/BUcrYouoy3DaSIM3jinF8TJbofR2GzSBUWChCZgkBok',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Mar 19 2018 20:27:58 GMT+0700 (WIB)
+[debug] [2018-03-19T13:27:59.896Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-19T13:27:59.956Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/firebase-yojek  
+  
+ Mon Mar 19 2018 20:27:59 GMT+0700 (WIB)
+[debug] [2018-03-19T13:28:01.865Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-19T13:28:01.868Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-yojek/tokens  
+  
+ Mon Mar 19 2018 20:28:01 GMT+0700 (WIB)
+[debug] [2018-03-19T13:28:03.328Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-19T13:28:03.332Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/firebase-yojek  
+  
+ Mon Mar 19 2018 20:28:03 GMT+0700 (WIB)
+[debug] [2018-03-19T13:28:05.546Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/joko/Project/yojek-site'...
+[info] 
+[debug] [2018-03-19T13:28:05.554Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/739519033561/clients/_:getWebAppConfig  
+  
+ Mon Mar 19 2018 20:28:05 GMT+0700 (WIB)
+[debug] [2018-03-19T13:28:07.693Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
