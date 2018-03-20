@@ -1,4 +1,4 @@
-var app = angular.module("yori", ['ngMaterial', 'ngRoute']);
+var app = angular.module("yori", ['ngMaterial', 'ngRoute', 'md.data.table']);
 
 app.config(['$locationProvider', function($locationProvider) {
   $locationProvider.hashPrefix('');

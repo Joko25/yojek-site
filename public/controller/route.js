@@ -7,6 +7,10 @@ app.config(function($routeProvider){
 		templateUrl : 'app/view/menu/read_menu.view.html',
 		controller : 'menuController'
 	})
+	.when('/users',{
+		templateUrl : 'view/master/user.view.html',
+		controller : 'userController'
+	})
 	.otherwise({
 		redirectTo : '/'
 	})

@@ -1,3 +1,4 @@
 https://material.angularjs.org/1.1.8/getting-started
 https://www.tutorialspoint.com/angular_material/angular_material_environment.htm
 https://www.tutorialspoint.com/angularjs/angularjs_environment.htm
+https://github.com/daniel-nagy/md-data-table

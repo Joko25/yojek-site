@@ -8,9 +8,18 @@
  
     <title>YORI | Administrator</title>
  	
+
+    <script defer src="/__/firebase/4.11.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.11.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.11.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.11.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.11.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+   
  	<!-- angular material style sheet -->
 	<link rel="stylesheet" href="assets/css/angular-material.min.css">
-	 
 	<!-- roboto font -->
 	<link rel="stylesheet" href="assets/css/font.css">
 
@@ -19,6 +28,8 @@
 	 
 	<!-- include custom CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+  <link href="bower_components/angular-material-data-table/dist/md-data-table.min.css" rel="stylesheet" type="text/css"/>
 	<style type="text/css">
 		
 	</style>
@@ -34,11 +45,9 @@
 		<!-- template side -->
 		<ng-include src="'template/_side.html'"></ng-include>
 		<md-content class="md-padding">
-		    	<div class="ext-content">
-				<div>
-					<!-- modal view -->
-					<div ng-view></div>
-				</div>
+		  <div class="ext-content">
+				<!-- modal view -->
+				<div ng-view></div>
 			</div>
 		</md-content>
 	</div>
@@ -51,6 +60,8 @@
 	<script src="assets/js/angular-animate.min.js"></script>
 	<script src="assets/js/angular-aria.min.js"></script>
 	<script src="assets/js/angular-messages.min.js"></script>
+  <!-- module -->
+  <script type="text/javascript" src="bower_components/angular-material-data-table/dist/md-data-table.min.js"></script>
 	 
 	<!-- angular material Library -->
 	<script src="assets/js/angular-material.min.js"></script>
@@ -65,6 +76,7 @@
 	<!-- controller template -->
 	<script type="text/javascript" src="controller/template.controller.js"></script>
 	<script type="text/javascript" src="controller/menu/menu.controller.js"></script>
+  <script type="text/javascript" src="controller/master/user.controller.js"></script>
 	
 	<!-- factory/modal -->
 	<script type="text/javascript" src="controller/factory.js"></script>
