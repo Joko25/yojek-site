@@ -16,29 +16,46 @@ app.controller('userController', function($scope, $mdDialog, $mdToast, menuFacto
 
 	var ref = firebase.database().ref();
 
+	//ref.off();// = firebase.database().ref();
+
+	//var syncObject = $firebaseObject(ref);
+
+	//syncObject.$bindTo($scope, "datauser");
+
+	function datanya(data){
+		return $scope.data.push(data);
+	}
+
 	$scope.data = [];
 
 	//console.log($scope.users);
 	var total = 0;
-	var data = [];
+	var data_ = [];
+	$scope.users = {data_};
 	// $scope.desserts = [];
 
 	ref.on("value", function(snapshot) {
-		var data = snapshot.val();
-		console.log(data.users);
+		var data = snapshot.val().users.masjo;
+		console.log('data '+ data);
+
+		datanya(snapshot.val());
+		//data.$bindTo($scope, "datauser");
+		data_.push(data);
 		
-		$scope.data.push(
-	    {name:'John', age:25, gender:'boy'},
-	    {name:'Jessie', age:30, gender:'girl'},
-	    {name:'Johanna', age:28, gender:'girl'},
-	    {name:'Mary', age:28, gender:'girl'},
-	    {name:'Sebastian', age:50, gender:'boy'},
-	    {name:'Erika', age:27, gender:'girl'},
-	    {name:'Samantha', age:60, gender:'girl'});
+		// $scope.data.push(
+		//     {name:'John', age:25, gender:'boy'},
+		//     {name:'Jessie', age:30, gender:'girl'},
+		//     {name:'Johanna', age:28, gender:'girl'},
+		//     {name:'Mary', age:28, gender:'girl'},
+		//     {name:'Sebastian', age:50, gender:'boy'},
+		//     {name:'Erika', age:27, gender:'girl'},
+		//     {name:'Samantha', age:60, gender:'girl'});
 		total = snapshot.val().length;
 	}, function (error) {
 	   console.log("Error: " + error.code);
 	});
+
+	console.log($scope.users);
 
 	$scope.desserts = {
 	    "count": 9,
